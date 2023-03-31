@@ -21,28 +21,17 @@ module ClassMethods
   end
 
   def add_instance
-      @instance_count1 ||= 0
-      @instance_count1 += 1
-    end
+      @instance_count ||= 0
+      @instance_count += 1
+  end
 end
 
 module InstanceMethods
 
   protected
 
-  def register_instance_set
-    
-    count=self.class.instance_variable_get :@instance_count
-    return self.class.instance_variable_set :@instance_count, count+1
-
-  end
-
-   def register_instance_set1
+  def register_instance_set1
     return self.class.add_instance
-    
-
   end
-
-
 end
 end
