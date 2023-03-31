@@ -8,7 +8,7 @@ class Train
    
   @@trains = [ ]  
   Train.set_instances
-
+  Train.set_register_instances
   def self.find_train (number)
   return @@trains.find {|train| train.number == number}
   end
