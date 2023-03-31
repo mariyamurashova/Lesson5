@@ -6,8 +6,7 @@ PassengerTrain.set_register_instances
   def initialize(name)
     super
     @train_type = :passenger
-  
     puts "Количество пассажирских поездов #{ PassengerTrain.instances_add}"
-    puts "Счетчик инстанс = #{register_instance_set}"
+    puts "Инстанс счетчик из примера #{register_instance_set1}"
   end
 end
