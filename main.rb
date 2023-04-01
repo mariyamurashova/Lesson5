@@ -110,13 +110,13 @@ class Menu
   end
 
   def new_stations_list
-    puts "Всего #{Station.instances_add} станций"
+    puts "Всего #{Station.instances} станций"
     Station.all_st
   end
 
   def add_carriages
     choose_train
-      if train_type_passenger?ß
+      if train_type_passenger?
          create_passenger_carriage
          add_new_carriage
       else
@@ -147,7 +147,7 @@ class Menu
 
   def create_passenger_carriage
     @carr_pass = PassengerCarriage.new
-    @carr_pass.producing_company
+    @carr_pass.produce_company
     puts "пассажирский"
   end
        
@@ -186,7 +186,7 @@ class Menu
   end
 
   def choose_route
-    puts "Всего маршрутов:#{Route.instances_add}"
+    puts "Всего маршрутов:#{Route.instances}"
     new_routes_list  
     @num_route = gets.chomp.to_i
   end
