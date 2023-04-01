@@ -7,6 +7,6 @@ class CargoTrain < Train
     super
     @train_type= :cargo 
     puts "Количество грузовых поездов #{ CargoTrain.instances_add}"
-    puts "Инстанс счетчик из примера #{register_instance_set1}"
+    puts "Инстанс счетчик из примера #{register_instance_set}"
   end
 end
