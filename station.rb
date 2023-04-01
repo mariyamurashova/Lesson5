@@ -36,7 +36,7 @@ class Station
 
   def total_trains_number
     puts "Сейчас на станции находятся следующие поезда:"
-    @trains_on_station.each  do |train|  puts "Поезд #{train.name} - #{train.train_type} "
+    @trains_on_station.each  do |train|  puts "Поезд #{train.number} - #{train.train_type} "
     end
     puts "Всего: #{@trains_on_station.length} поезда"
   end
