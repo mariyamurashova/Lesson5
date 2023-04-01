@@ -30,7 +30,7 @@ module InstanceMethods
 
   protected
 
-  def register_instance_set1
+  def register_instance_set
     return self.class.add_instance
   end
 end
