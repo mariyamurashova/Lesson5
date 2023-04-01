@@ -148,7 +148,7 @@ class Menu
   def create_passenger_carriage
     @carr_pass = PassengerCarriage.new
     @carr_pass.produce_company
-    puts "пассажирский"
+    puts "Создан passenger вагон"
   end
        
   def add_new_carriage
@@ -158,8 +158,8 @@ class Menu
 
   def create_cargo_carriage
     @carriage = CargoCarriage.new
-    @carriage.producing_company
-    puts "cargo"
+    @carriage.produce_company
+    puts "Создан cargo вагон"
   end
        
   def  train_type_passenger?
